@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gestión Administrativa</title>
+    <script src="gestionGA.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(1, 42, 74);
+        }
+
+
+        /* Contenedor que agrupa el menu y los resultados */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            /* Espacio entre el menú y los resultados */
+            text-align: left;
+        }
+
+
+        aside {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 400px;
+            
+        }
+
+
+        .contenido {
+            background-color: #e0e0e0;
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 300px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>CALCULADORA - GA</h1>
+    <header></header>
+    <main>
+
+        <aside>
+            <h2>SELECIONA UNA OPCION</h2>
+            <ul>
+                <li><a href="#" onclick="altaSocio()">Alta de un nuevo socio</a></li>
+                <li><a href="#" onclick="bajaSocio()">Baja de un socio (por el número de socio o por DNI)</a></li>
+                <br>
+                <li><a href="#" onclick="mostrarSocios()">Listar los socios</a></li>                
+                <li><a href="#" onclick="mostrarNumeroProductos()">Mostrar número total de socios</a></li>
+            </ul>
+        </aside>
+        <div class="contenido">
+
+            <span id="resultado"></span>
+        </div>
+    </main>
+</body>
+
+</html>
